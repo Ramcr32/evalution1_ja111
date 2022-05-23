@@ -1,0 +1,9 @@
+package com.masai;
+
+public class Course {
+	public static void main(String[] args) {
+		String x= "ram".concat(" sinha");
+		x.equals("ram sinha");
+		System.out.println(x);
+	}
+}

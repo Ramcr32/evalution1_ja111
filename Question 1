@@ -1,0 +1,57 @@
+->Why String is immutable in java and what is the difference between String and String Builder? And Write some
+of the methods of String class at least 5 with example.
+
+ans-> string is immutable because it is security  concern if string is not immutable then lot of heap space 
+is saved in JRE. it is taking lot of space and time. if string is not immutable then username, password are passed as strings 
+in server the string is immutable so its value is not change thats why is safe to hackers.
+
+difference between String and StringBuilder :
+1. object of string is immutable but object of stringBuilder are 
+mutable.
+2. we can create a string object without using new operator but
+in string builder required new operator.
+3. string builder is speedy and consumes less memory than a string while performing.
+4. strings length is constant but string builders length are not specified
+
+five methods of string class:
+1. concate 
+public class Course {
+	public static void main(String[] args) {
+		String x= "ram".concat(" sinha");
+		System.out.println(x);
+	}
+}
+2.equals
+public class Course {
+	public static void main(String[] args) {
+		String x= "ram".concat(" sinha");
+		
+		System.out.println(x.equals("ram sinha"));
+	}
+}
+3. charAt()
+public class Course {
+	public static void main(String[] args) {
+		String x= "ram".concat(" sinha");
+		
+		System.out.println(x.charAt(3));
+	}
+}
+4.campareTo()
+public class Course {
+	public static void main(String[] args) {
+		String x= "ram".concat(" sinha");
+		String y= "syam"
+		
+		System.out.println(x.campareTo(y));
+	}
+}
+5.indexOf()
+public class Course {
+	public static void main(String[] args) {
+		String x= "ram".concat(" sinha");
+		
+		System.out.println(x.indexOf("r"));
+	}
+}
+
